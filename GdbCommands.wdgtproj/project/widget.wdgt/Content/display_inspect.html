@@ -3,21 +3,21 @@
     <dl class="commandhelp">
         <dt class="commandterm">
         print
-            <span class="optargs">[</span>/<span class="args">f</span><span class="optargs">]</span> <span class="optargs">[</span><span class="args">expr</span><span class="optargs">]</span>
+            <span class="constargs"><span class="optargs">[</span>/<span class="args">f</span><span class="optargs">]</span></span> <span class="constargs"><span class="optargs">[</span><span class="args">expr</span><span class="optargs">]</span></span>
     </dt>
     <dd class="commanddesc">
         Show last value $ [or of <span class="args">expr</span>], using format <span class="args">f</span>. Format specification: <code>x</code>: hexadecimal, <code>d</code>: signed decimal,  <code>u</code>: unsigned decimal,  <code>o</code>: octal, <code>t</code>: binary,  <code>a</code>: absolute and relative address,  <code>c</code>: character,  <code>f</code>: floating point.
     </dd>
     <dt class="commandterm">
         call
-            <span class="optargs">[</span>/<span class="args">f</span><span class="optargs">]</span>  <span class="args">expr</span>
+            <span class="constargs"><span class="optargs">[</span>/<span class="args">f</span><span class="optargs">]</span></span>  <span class="constargs"><span class="args">expr</span></span>
     </dt>
     <dd class="commanddesc">
         Like <code>print</code>, but does not display <code>void</code>.
     </dd>
     <dt class="commandterm">
         x
-            <span class="optargs">[</span>/<span class="args">N</span><span class="args">u</span><span class="args">f</span><span class="optargs">]</span>  <span class="args">expr</span>
+            <span class="constargs"><span class="optargs">[</span>/<span class="args">N</span><span class="args">u</span><span class="args">f</span><span class="optargs">]</span></span>  <span class="constargs"><span class="args">expr</span></span>
     </dt>
     <dd class="commanddesc">
         Examine memory at address <span class="args">expr</span>, using format <span class="args">f</span>. If <span class="args">N</span> is given, count of units to display, where units, <span class="args">u</span>, are one of: <code>b</code>: bytes, <code>h</code>: halfwords (two bytes), <code>w</code>: word (four bytes), <code>g</code>: giant words (eight bytes).

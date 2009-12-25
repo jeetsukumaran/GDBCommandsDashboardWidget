@@ -73,7 +73,7 @@ span.constargs {
     font-weight: normal;
     font-size: 10px;
     font-weight: bold;
-    color: darkred;
+    color: MidnightBlue;
 }
 
 span.optargs {
@@ -665,17 +665,17 @@ GDB_REFDEFS = [
      '',
      '',
      '$<n>',
-     '<i>n</i>th displayed value.'],
+     '<span class="args">n</span>th displayed value.'],
     ['Expressions',
      '',
      '',
      '$$',
-     'Displayed value previous to <span class="args">$</span>.'],
+     'Displayed value previous to <span class="constargs">$</span>.'],
     ['Expressions',
      '',
      '',
      '$$<n>',
-     '<i>n</i>th displayed value back from <span class="args">$</span>.'],
+     '<span class="args">n</span>th displayed value back from <span class="constargs">$</span>.'],
     ['Expressions',
      '',
      '',
@@ -685,11 +685,11 @@ GDB_REFDEFS = [
      '',
      '',
      '$__',
-     'Value at address <span class="args">$_</span>.'],
+     'Value at address <span class="constargs">$_</span>.'],
     ['Expressions',
      '',
      '',
-     '$var',
+     '$<var>',
      'Convenience variable; assign any value.'],
     ['Expressions',
      '',
@@ -839,7 +839,7 @@ GDB_REFDEFS = [
      '',
      'set language',
      '<lang>',
-     'Set language for GDB expressions (<code>auto</code>, <code>c</code>, or <code>modula-2</code>.'],
+     'Set language for GDB expressions (<code>auto</code>, <code>c</code>, or <code>modula-2</code>).'],
     ['Controlling GDB',
      '',
      'show language',
@@ -1050,17 +1050,17 @@ GDB_REFDEFS = [
     ['Source Files',
      '',
      'list',
-     '+offset',
+     '+<offset>',
      'Show source lines <span class="args">offset</span> lines after last printed.'],
     ['Source Files',
      '',
      'list',
-     '-offset',
+     '-<offset>',
      'Show source lines <span class="args">offset</span> lines before last printed.'],
     ['Source Files',
      '',
      'list',
-     '*address',
+     '*<address>',
      'Show source lines containing <span class="args">address</span>.'],
     ['Source Files',
      '',
@@ -1173,8 +1173,7 @@ def compose_entry(key, command, args, desc):
         for a in args:
             if '<' in a:
                 a = a.replace('<', '<span class="args"$$$').replace('>', '</span>').replace('$$$', '>')
-            else:
-                a = '<span class="constargs">%s</span>' % a
+            a = '<span class="constargs">%s</span>' % a
             if ']' in a:
                 a = a.replace('[', '<span class="optargs">[</span>').replace(']', '<span class="optargs">]</span>')
                 dargs.append(a)

@@ -3,7 +3,7 @@
     <dl class="commandhelp">
         <dt class="commandterm">
         dir
-             <span class="args">names</span>
+             <span class="constargs"><span class="args">names</span></span>
     </dt>
     <dd class="commanddesc">
         Add directory <span class="args">names</span> to front of source path.
@@ -34,49 +34,49 @@
     </dd>
     <dt class="commandterm">
         list
-            <span class="optargs">[</span><span class="args">file</span>:<span class="optargs">]</span>  <span class="args">num</span>
+            <span class="constargs"><span class="optargs">[</span><span class="args">file</span>:<span class="optargs">]</span></span>  <span class="constargs"><span class="args">num</span></span>
     </dt>
     <dd class="commanddesc">
         Show lines of source surrounding line number <span class="args">num</span> [in <span class="args">file</span>].
     </dd>
     <dt class="commandterm">
         list
-            <span class="optargs">[</span><span class="args">file</span>:<span class="optargs">]</span>  <span class="args">func</span>
+            <span class="constargs"><span class="optargs">[</span><span class="args">file</span>:<span class="optargs">]</span></span>  <span class="constargs"><span class="args">func</span></span>
     </dt>
     <dd class="commanddesc">
         Show beginning of function <span class="args">func</span> [in <span class="args">file</span>].
     </dd>
     <dt class="commandterm">
         list
-             <span class="constargs">+offset</span>
+             <span class="constargs">+<span class="args">offset</span></span>
     </dt>
     <dd class="commanddesc">
         Show source lines <span class="args">offset</span> lines after last printed.
     </dd>
     <dt class="commandterm">
         list
-             <span class="constargs">-offset</span>
+             <span class="constargs">-<span class="args">offset</span></span>
     </dt>
     <dd class="commanddesc">
         Show source lines <span class="args">offset</span> lines before last printed.
     </dd>
     <dt class="commandterm">
         list
-             <span class="constargs">*address</span>
+             <span class="constargs">*<span class="args">address</span></span>
     </dt>
     <dd class="commanddesc">
         Show source lines containing <span class="args">address</span>.
     </dd>
     <dt class="commandterm">
         list
-            <span class="optargs">[</span><span class="args">file</span>:<span class="optargs">]</span>  <span class="args">first</span>,  <span class="args">last</span>
+            <span class="constargs"><span class="optargs">[</span><span class="args">file</span>:<span class="optargs">]</span></span>  <span class="constargs"><span class="args">first</span>,</span>  <span class="constargs"><span class="args">last</span></span>
     </dt>
     <dd class="commanddesc">
         Show source lines from <span class="args">first</span> to <span class="args">last</span> [in <span class="args">file</span>].
     </dd>
     <dt class="commandterm">
         info line
-             <span class="args">num</span>
+             <span class="constargs"><span class="args">num</span></span>
     </dt>
     <dd class="commanddesc">
         Show starting, ending addresses of compiled code for source line <span class="args">num</span>.
@@ -95,14 +95,14 @@
     </dd>
     <dt class="commandterm">
         forw
-             <span class="args">regexp</span>
+             <span class="constargs"><span class="args">regexp</span></span>
     </dt>
     <dd class="commanddesc">
         Search following source lines for regular expression <span class="args">regexp</span>.
     </dd>
     <dt class="commandterm">
         rev
-             <span class="args">regexp</span>
+             <span class="constargs"><span class="args">regexp</span></span>
     </dt>
     <dd class="commanddesc">
         Search preceding source lines for regular expression <span class="args">regexp</span>.
