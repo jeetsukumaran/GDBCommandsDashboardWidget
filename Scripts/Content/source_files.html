@@ -1,0 +1,111 @@
+<div class="section">
+    <p class="sectiontitle">Source Files</p>
+    <dl class="commandhelp">
+        <dt class="commandterm">
+        dir
+             <span class="args">names</span>
+    </dt>
+    <dd class="commanddesc">
+        Add directory <span class="args">names</span> to front of source path.
+    </dd>
+    <dt class="commandterm">
+        dir
+    </dt>
+    <dd class="commanddesc">
+        Clear current source path.
+    </dd>
+    <dt class="commandterm">
+        show dir
+    </dt>
+    <dd class="commanddesc">
+        Show current source path.
+    </dd>
+    <dt class="commandterm">
+        list
+    </dt>
+    <dd class="commanddesc">
+        Show next ten lines of source.
+    </dd>
+    <dt class="commandterm">
+        list -
+    </dt>
+    <dd class="commanddesc">
+        Show previous ten lines of source.
+    </dd>
+    <dt class="commandterm">
+        list
+            <span class="optargs">[</span><span class="args">file</span>:<span class="optargs">]</span>  <span class="args">num</span>
+    </dt>
+    <dd class="commanddesc">
+        Show lines of source surrounding line number <span class="args">num</span> [in <span class="args">file</span>].
+    </dd>
+    <dt class="commandterm">
+        list
+            <span class="optargs">[</span><span class="args">file</span>:<span class="optargs">]</span>  <span class="args">func</span>
+    </dt>
+    <dd class="commanddesc">
+        Show beginning of function <span class="args">func</span> [in <span class="args">file</span>].
+    </dd>
+    <dt class="commandterm">
+        list
+             <span class="constargs">+offset</span>
+    </dt>
+    <dd class="commanddesc">
+        Show source lines <span class="args">offset</span> lines after last printed.
+    </dd>
+    <dt class="commandterm">
+        list
+             <span class="constargs">-offset</span>
+    </dt>
+    <dd class="commanddesc">
+        Show source lines <span class="args">offset</span> lines before last printed.
+    </dd>
+    <dt class="commandterm">
+        list
+             <span class="constargs">*address</span>
+    </dt>
+    <dd class="commanddesc">
+        Show source lines containing <span class="args">address</span>.
+    </dd>
+    <dt class="commandterm">
+        list
+            <span class="optargs">[</span><span class="args">file</span>:<span class="optargs">]</span>  <span class="args">first</span>,  <span class="args">last</span>
+    </dt>
+    <dd class="commanddesc">
+        Show source lines from <span class="args">first</span> to <span class="args">last</span> [in <span class="args">file</span>].
+    </dd>
+    <dt class="commandterm">
+        info line
+             <span class="args">num</span>
+    </dt>
+    <dd class="commanddesc">
+        Show starting, ending addresses of compiled code for source line <span class="args">num</span>.
+    </dd>
+    <dt class="commandterm">
+        info source
+    </dt>
+    <dd class="commanddesc">
+        Show name of current source file.
+    </dd>
+    <dt class="commandterm">
+        info sources
+    </dt>
+    <dd class="commanddesc">
+        List all source files in use.
+    </dd>
+    <dt class="commandterm">
+        forw
+             <span class="args">regexp</span>
+    </dt>
+    <dd class="commanddesc">
+        Search following source lines for regular expression <span class="args">regexp</span>.
+    </dd>
+    <dt class="commandterm">
+        rev
+             <span class="args">regexp</span>
+    </dt>
+    <dd class="commanddesc">
+        Search preceding source lines for regular expression <span class="args">regexp</span>.
+    </dd>
+    </dl>
+</div>

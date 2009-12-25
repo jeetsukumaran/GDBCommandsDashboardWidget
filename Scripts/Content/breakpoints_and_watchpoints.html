@@ -1,0 +1,156 @@
+<div class="section">
+    <p class="sectiontitle">Breakpoints and Watchpoints</p>
+    <dl class="commandhelp">
+        <dt class="commandterm">
+        break
+            <span class="optargs">[</span><span class="args">file</span>:<span class="optargs">]</span><span class="args">line</span>
+    </dt>
+    <dd class="commanddesc">
+        Set breakpoint at <span class="args">line</span> in <span class="args">file</span>. E.g. &quot;<code>break main.c:37</code>&quot;
+    </dd>
+    <dt class="commandterm">
+        break
+            <span class="optargs">[</span><span class="args">file</span>:<span class="optargs">]</span><span class="args">function</span>
+    </dt>
+    <dd class="commanddesc">
+        Set breakpoint at <span class="args">function</span> in <span class="args">file</span>. E.g. &quot;<code>break main.c:calc</code>&quot;
+    </dd>
+    <dt class="commandterm">
+        break
+             +<span class="args">offset</span>
+    </dt>
+    <dd class="commanddesc">
+        Set breakpoint at <span class="args">offset</span> lines from current stop.
+    </dd>
+    <dt class="commandterm">
+        break
+             -<span class="args">offset</span>
+    </dt>
+    <dd class="commanddesc">
+        Set breakpoint at <span class="args">offset</span> lines before current stop.
+    </dd>
+    <dt class="commandterm">
+        break
+             +<span class="args">addr</span>
+    </dt>
+    <dd class="commanddesc">
+        Set breakpoint at address <span class="args">addr</span>.
+    </dd>
+    <dt class="commandterm">
+        break
+             +<span class="args">offset</span>
+    </dt>
+    <dd class="commanddesc">
+        Set breakpoint at next instruction.
+    </dd>
+    <dt class="commandterm">
+        break ... if
+             <span class="args">expr</span>
+    </dt>
+    <dd class="commanddesc">
+        Break conditionally on non-zero expression.
+    </dd>
+    <dt class="commandterm">
+        cond
+             <span class="args">n</span> <span class="optargs">[</span><span class="args">expr</span><span class="optargs">]</span>
+    </dt>
+    <dd class="commanddesc">
+        New conditional expression on breakpoint <span class="args">n</span>; make unconditional if no <span class="args">expr</span>.
+    </dd>
+    <dt class="commandterm">
+        tbreak
+             <span class="constargs">...</span>
+    </dt>
+    <dd class="commanddesc">
+        Temporary breakpoint; disable when reached.
+    </dd>
+    <dt class="commandterm">
+        rbreak
+             <span class="args">regexp</span>
+    </dt>
+    <dd class="commanddesc">
+        Break on all functions matching <span class="args">regexp</span>.
+    </dd>
+    <dt class="commandterm">
+        watch
+             <span class="args">expr</span>
+    </dt>
+    <dd class="commanddesc">
+        Set a watchpoint for expression <span class="args">expr</span>.
+    </dd>
+    <dt class="commandterm">
+        catch
+             <span class="args">x</span>
+    </dt>
+    <dd class="commanddesc">
+        Break at C++ handler for exception <span class="args">x</span>.
+    </dd>
+    <dt class="commandterm">
+        info break
+    </dt>
+    <dd class="commanddesc">
+        Show defined breakpoints.
+    </dd>
+    <dt class="commandterm">
+        info watch
+    </dt>
+    <dd class="commanddesc">
+        Show defined watchpoints.
+    </dd>
+    <dt class="commandterm">
+        clear
+    </dt>
+    <dd class="commanddesc">
+        Delete breakpoints at next instruction.
+    </dd>
+    <dt class="commandterm">
+        clear
+            <span class="optargs">[</span><span class="args">file</span>:<span class="optargs">]</span>function
+    </dt>
+    <dd class="commanddesc">
+        Delete breakpoints on entry to <span class="args">function</span>.
+    </dd>
+    <dt class="commandterm">
+        clear
+            <span class="optargs">[</span><span class="args">file</span>:<span class="optargs">]</span><span class="args">line</span>
+    </dt>
+    <dd class="commanddesc">
+        Delete breakpoints on source line <span class="args">line</span>.
+    </dd>
+    <dt class="commandterm">
+        delete
+            <span class="optargs">[</span><span class="args">n</span><span class="optargs">]</span>
+    </dt>
+    <dd class="commanddesc">
+        Delete breakpoints [or breakpoint <span class="args">n</span>].
+    </dd>
+    <dt class="commandterm">
+        disable
+            <span class="optargs">[</span><span class="args">n</span><span class="optargs">]</span>
+    </dt>
+    <dd class="commanddesc">
+        Disable breakpoints [or breakpoint <span class="args">n</span>].
+    </dd>
+    <dt class="commandterm">
+        enable once
+            <span class="optargs">[</span><span class="args">n</span><span class="optargs">]</span>
+    </dt>
+    <dd class="commanddesc">
+        Enable breakpoints [or breakpoint <span class="args">n</span>]; disable when reached.
+    </dd>
+    <dt class="commandterm">
+        enable del
+            <span class="optargs">[</span><span class="args">n</span><span class="optargs">]</span>
+    </dt>
+    <dd class="commanddesc">
+        Enable breakpoints [or breakpoint <span class="args">n</span>]; delete when reached.
+    </dd>
+    <dt class="commandterm">
+        ignore
+             <span class="args">n</span>  <span class="args">count</span>
+    </dt>
+    <dd class="commanddesc">
+        Ignore breakpoint <span class="args">n</span> <span class="args">count</span> times.
+    </dd>
+    </dl>
+</div>

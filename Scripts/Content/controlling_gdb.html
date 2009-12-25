@@ -1,0 +1,223 @@
+<div class="section">
+    <p class="sectiontitle">Controlling GDB</p>
+    <dl class="commandhelp">
+        <dt class="commandterm">
+        set complaint
+             <span class="args">limit</span>
+    </dt>
+    <dd class="commanddesc">
+        Set number of messages on unusual symbols.
+    </dd>
+    <dt class="commandterm">
+        show complaint
+    </dt>
+    <dd class="commanddesc">
+        Show number of messages on unusual symbols.
+    </dd>
+    <dt class="commandterm">
+        set confirm
+             <span class="constargs">on/off</span>
+    </dt>
+    <dd class="commanddesc">
+        Enable/disable cautionary queries.
+    </dd>
+    <dt class="commandterm">
+        show confirm
+    </dt>
+    <dd class="commanddesc">
+        Show cautionary queries setting.
+    </dd>
+    <dt class="commandterm">
+        set editing
+             <span class="constargs">on/off</span>
+    </dt>
+    <dd class="commanddesc">
+        Set <code>readline</code> command-line editing.
+    </dd>
+    <dt class="commandterm">
+        show editing
+    </dt>
+    <dd class="commanddesc">
+        Show <code>readline</code> command-line editing.
+    </dd>
+    <dt class="commandterm">
+        set height
+             <span class="args">lpp</span>
+    </dt>
+    <dd class="commanddesc">
+        Set number of lines before pause in display.
+    </dd>
+    <dt class="commandterm">
+        show height
+    </dt>
+    <dd class="commanddesc">
+        Show number of lines before pause in display.
+    </dd>
+    <dt class="commandterm">
+        set language
+             <span class="args">lang</span>
+    </dt>
+    <dd class="commanddesc">
+        Set language for GDB expressions (<code>auto</code>, <code>c</code>, or <code>modula-2</code>.
+    </dd>
+    <dt class="commandterm">
+        show language
+    </dt>
+    <dd class="commanddesc">
+        Show language for GDB expressions.
+    </dd>
+    <dt class="commandterm">
+        set listsize
+             <span class="args">n</span>
+    </dt>
+    <dd class="commanddesc">
+        Set number of lines shown by <code>list</code>.
+    </dd>
+    <dt class="commandterm">
+        show listsize
+    </dt>
+    <dd class="commanddesc">
+        Show number of lines shown by <code>list</code>.
+    </dd>
+    <dt class="commandterm">
+        set prompt
+             <span class="args">str</span>
+    </dt>
+    <dd class="commanddesc">
+        Set GDB prompt to <span class="args">str</span>.
+    </dd>
+    <dt class="commandterm">
+        show prompt
+    </dt>
+    <dd class="commanddesc">
+        Show GDB prompt string.
+    </dd>
+    <dt class="commandterm">
+        set radix
+             <span class="constargs">base</span>
+    </dt>
+    <dd class="commanddesc">
+        Set octal, decimal, or hex number representation.
+    </dd>
+    <dt class="commandterm">
+        show radix
+    </dt>
+    <dd class="commanddesc">
+        Show octal, decimal, or hex number representation.
+    </dd>
+    <dt class="commandterm">
+        set verbose
+             <span class="constargs">on/off</span>
+    </dt>
+    <dd class="commanddesc">
+        Set displaying of message when loading symbols.
+    </dd>
+    <dt class="commandterm">
+        show verbose
+    </dt>
+    <dd class="commanddesc">
+        Show displaying of message when loading symbols.
+    </dd>
+    <dt class="commandterm">
+        set width
+             <span class="args">cpl</span>
+    </dt>
+    <dd class="commanddesc">
+        Set number of characters before line wrap.
+    </dd>
+    <dt class="commandterm">
+        show width
+    </dt>
+    <dd class="commanddesc">
+        Show number of characters before line wrap.
+    </dd>
+    <dt class="commandterm">
+        set write
+             <span class="constargs">on/off</span>
+    </dt>
+    <dd class="commanddesc">
+        Allow/disallow patching binary or core files.
+    </dd>
+    <dt class="commandterm">
+        show width
+    </dt>
+    <dd class="commanddesc">
+        Show allow/disallow patching of binary or core files.
+    </dd>
+    <dt class="commandterm">
+        print address
+             <span class="constargs">on/off</span>
+    </dt>
+    <dd class="commanddesc">
+        Print memory address in stacks, values.
+    </dd>
+    <dt class="commandterm">
+        print array
+             <span class="constargs">on/off</span>
+    </dt>
+    <dd class="commanddesc">
+        Compact or attractive format for arrays.
+    </dd>
+    <dt class="commandterm">
+        print demangl
+             <span class="constargs">on/off</span>
+    </dt>
+    <dd class="commanddesc">
+        Demangled source or internal form for C++ symbols.
+    </dd>
+    <dt class="commandterm">
+        print elements
+             <span class="args">limit</span>
+    </dt>
+    <dd class="commanddesc">
+        Number of array elements to display.
+    </dd>
+    <dt class="commandterm">
+        print object
+             <span class="args">limit</span>
+    </dt>
+    <dd class="commanddesc">
+        Print C++ derived  types for objects.
+    </dd>
+    <dt class="commandterm">
+        print pretty
+             <span class="constargs">on/off</span>
+    </dt>
+    <dd class="commanddesc">
+        Indented or compact struct display.
+    </dd>
+    <dt class="commandterm">
+        print union
+             <span class="constargs">on/off</span>
+    </dt>
+    <dd class="commanddesc">
+        Display of union members.
+    </dd>
+    <dt class="commandterm">
+        print vtble
+             <span class="constargs">on/off</span>
+    </dt>
+    <dd class="commanddesc">
+        Display of C++ virtual function tables.
+    </dd>
+    <dt class="commandterm">
+        show commands
+    </dt>
+    <dd class="commanddesc">
+        Show last 10 commands.
+    </dd>
+    <dt class="commandterm">
+        show commands
+             <span class="args">n</span>
+    </dt>
+    <dd class="commanddesc">
+        Show 10 commands around number <span class="args">n</span>.
+    </dd>
+    <dt class="commandterm">
+        show commands +
+    </dt>
+    <dd class="commanddesc">
+        Show next 10 commands.
+    </dd>
+    </dl>
+</div>

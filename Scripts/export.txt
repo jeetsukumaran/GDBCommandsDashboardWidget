@@ -1,0 +1,1 @@
+python build-content.py && cp Content/* ../GdbCommands.wdgtproj/project/widget.wdgt/Content/
