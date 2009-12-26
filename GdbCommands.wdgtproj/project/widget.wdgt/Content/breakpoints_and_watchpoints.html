@@ -59,10 +59,10 @@
     </dd>
     <dt class="commandterm">
         tbreak
-             <span class="constargs">...</span>
+            <span class="constargs"><span class="optargs">[</span><span class="optargs">[</span><span class="args">filename</span>:<span class="optargs">]</span><span class="args">lineno</span></span>  <span class="constargs">|</span> <span class="constargs"><span class="args">function</span><span class="optargs">]</span></span>
     </dt>
     <dd class="commanddesc">
-        Temporary breakpoint; disable when reached.
+        Temporary breakpoint; disable when reached. With a <span class="args">lineno</span> argument, set a break there in the current file. With a <span class="args">function</span> argument, set a break at the first executable statement within that function. The line number may be prefixed with a <span class="args">filename</span> and a colon, to specify a breakpoint in another file.
     </dd>
     <dt class="commandterm">
         rbreak

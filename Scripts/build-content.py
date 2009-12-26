@@ -463,8 +463,12 @@ GDB_REFDEFS = [
     ['Breakpoints and Watchpoints',
      '',
      'tbreak',
-     '...',
-     'Temporary breakpoint; disable when reached.'],
+     '[[<filename>:]<lineno> | <function>]',
+     'Temporary breakpoint; disable when reached. With a <span class="args">lineno</span> argument, '\
+     + 'set a break there in the current file. With a <span class="args">function</span> argument, set a break at the first '\
+     + 'executable statement within that function. ' \
+     + 'The line number may be prefixed with a <span class="args">filename</span> and a colon, to ' \
+     + 'specify a breakpoint in another file.'],
     ['Breakpoints and Watchpoints',
      '',
      'rbreak',
@@ -1177,6 +1181,8 @@ def compose_entry(key, command, args, desc):
             a = '<span class="constargs">%s</span>' % a
             if ']' in a:
                 a = a.replace('[', '<span class="optargs">[</span>').replace(']', '<span class="optargs">]</span>')
+                a = a.replace('|', '<span class="optargs">|</span>')
+                a = a.replace(',', '<span class="optargs">,</span>')
                 dargs.append(a)
             else:
                 dargs.append(' ' + a)
