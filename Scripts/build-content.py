@@ -59,6 +59,7 @@ dl.commandhelp dt {
 dl.commandhelp dd {
     padding-bottom: 4px;
     font-size: 10px;
+    margin-left: 20px;
 }
 
 span.args {
@@ -86,7 +87,7 @@ span.optargs {
 span.commandshortcut {
     float: left;
     margin-right: 4px;
-    width: 60px;
+    width: 75px;
 }
 
 span.keygroup {
@@ -531,7 +532,7 @@ GDB_REFDEFS = [
      'Ignore breakpoint <span class="args">n</span> <span class="args">count</span> times.'],
 
     ['Program Stack',
-     'bt',
+     '',
      'backtrace',
      '[<n>]',
      'Print trace of all frames in stack; or of <span class="args">n</span> frames.'],
@@ -665,7 +666,7 @@ GDB_REFDEFS = [
      '',
      '',
      '$<n>',
-     '<span class="args">n</span>th displayed value.'],
+     '<span class="args">n</span>-th displayed value.'],
     ['Expressions',
      '',
      '',
@@ -675,7 +676,7 @@ GDB_REFDEFS = [
      '',
      '',
      '$$<n>',
-     '<span class="args">n</span>th displayed value back from <span class="constargs">$</span>.'],
+     '<span class="args">n</span>-th displayed value back from <span class="constargs">$</span>.'],
     ['Expressions',
      '',
      '',
@@ -868,7 +869,7 @@ GDB_REFDEFS = [
     ['Controlling GDB',
      '',
      'set radix',
-     'base',
+     '<base>',
      'Set octal, decimal, or hex number representation.'],
     ['Controlling GDB',
      '',
@@ -1122,7 +1123,7 @@ GDB_REFDEFS = [
      '',
      'Step one instruction.'],
     ['Emacs',
-     '<span class="keygroup"><span class="specialkey">CTL</span>-c <span class="specialkey">C</span>-f</span>',
+     '<span class="keygroup"><span class="specialkey">CTL</span>-c <span class="specialkey">CTL</span>-f</span>',
      'finish',
      '',
      'Finish current stack frame.'],
@@ -1138,7 +1139,7 @@ GDB_REFDEFS = [
      'Down <span class="args">arg</span> frames.'],
     ['Emacs',
      '<span class="keygroup"><span class="specialkey">CTL</span>-x &amp;</span>',
-     'finish',
+     '',
      '',
      'Copy number from point, insert at end.'],
     ['Emacs',

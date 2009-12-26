@@ -147,6 +147,7 @@ function displayAllSections() {
     displayHTML = displayHTML + readUrl("emacs.html");
     document.getElementById('maincontent').innerHTML = displayHTML;
     document.getElementById("scrollArea").object.refresh();
+    document.getElementById("scrollArea").object.verticalScrollTo(0,0);
 }
 
 function displayContent(event)
@@ -162,6 +163,7 @@ function displayContent(event)
         displayHTML = readUrl(contentFile);
         document.getElementById('maincontent').innerHTML = displayHTML;
         document.getElementById("scrollArea").object.refresh();
+        document.getElementById("scrollArea").object.verticalScrollTo(0,0);
     }
 }
 

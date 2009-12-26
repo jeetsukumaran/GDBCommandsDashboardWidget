@@ -35,6 +35,7 @@ dl.commandhelp dt {
 dl.commandhelp dd {
     padding-bottom: 4px;
     font-size: 10px;
+    margin-left: 20px;
 }
 
 span.args {
@@ -62,7 +63,7 @@ span.optargs {
 span.commandshortcut {
     float: left;
     margin-right: 4px;
-    width: 60px;
+    width: 75px;
 }
 
 span.keygroup {
